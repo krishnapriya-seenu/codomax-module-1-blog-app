@@ -1,0 +1,380 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6fb;
+    color: #20243a;
+}
+
+header {
+    background: #20243a;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.blog-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 25px;
+    box-shadow: 0 4px 15px #00000010;
+}
+
+button {
+    background: #7548e8;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* Login Page */
+
+.login-container {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 35px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px #20243a12;
+}
+
+.login-card h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.login-card > p {
+    color: #777;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+#loginForm label {
+    display: block;
+    margin: 18px 0 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#loginForm input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+}
+
+#loginForm input:focus {
+    border-color: #7548e8;
+}
+
+#loginForm button {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.login-card .register-link {
+    margin: 20px 0 0;
+    text-align: center;
+    font-size: 13px;
+}
+
+.register-link a {
+    color: #7548e8;
+    font-weight: bold;
+}
+
+
+/* Fix Register Form Layout */
+
+#registerForm label {
+    display: block;
+    margin: 18px 0 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#registerForm input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+}
+
+#registerForm input:focus {
+    border-color: #7548e8;
+}
+
+#registerForm button {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+}
+
+/* Dashboard and Create Blog Pages */
+
+.dashboard-container,
+.create-container {
+    max-width: 1100px;
+    margin: 45px auto;
+    padding: 20px;
+}
+
+.dashboard-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.dashboard-heading h2,
+.create-card h2 {
+    font-size: 32px;
+    margin: 12px 0;
+    color: #20243a;
+}
+
+.dashboard-heading p,
+.create-description {
+    color: #777;
+    line-height: 1.7;
+}
+
+.dashboard-label {
+    color: #7548e8 !important;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.dashboard-create-btn {
+    display: inline-block;
+    padding: 13px 20px;
+    background: #7548e8;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dashboard-create-btn:hover {
+    background: #6036cf;
+}
+
+.stats-card {
+    margin-top: 35px;
+    max-width: 300px;
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 20px #20243a0c;
+}
+
+.stats-card p {
+    color: #777;
+    font-size: 14px;
+}
+
+.stats-card h3 {
+    font-size: 38px;
+    margin-top: 10px;
+    color: #7548e8;
+}
+
+.stats-icon {
+    font-size: 30px;
+}
+
+.dashboard-posts {
+    margin-top: 45px;
+}
+
+.dashboard-posts > h2 {
+    margin-bottom: 22px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.dashboard-blog-card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #20243a0c;
+    overflow-wrap: anywhere;
+}
+
+.dashboard-blog-card h3 {
+    margin: 12px 0;
+    color: #20243a;
+}
+
+.dashboard-blog-card p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 14px;
+    white-space: pre-wrap;
+}
+
+.blog-category {
+    color: #7548e8;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.blog-date {
+    display: block;
+    margin-top: 15px;
+    color: #999;
+    font-size: 11px;
+}
+
+.no-posts {
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    color: #777;
+    text-align: center;
+}
+
+/* Create Blog Form */
+
+.create-container {
+    max-width: 760px;
+}
+
+.create-card {
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px #20243a12;
+}
+
+#createBlogForm label {
+    display: block;
+    margin: 22px 0 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#createBlogForm input,
+#createBlogForm select,
+#createBlogForm textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background: white;
+}
+
+#createBlogForm textarea {
+    resize: vertical;
+    line-height: 1.7;
+}
+
+#createBlogForm input:focus,
+#createBlogForm select:focus,
+#createBlogForm textarea:focus {
+    outline: 2px solid #d8ccff;
+    border-color: #7548e8;
+}
+
+.create-actions {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.cancel-btn {
+    padding: 12px 18px;
+    color: #555;
+    text-decoration: none;
+}
+
+#createBlogForm button {
+    margin: 0;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 25px;
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-container,
+    .create-container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .create-card {
+        padding: 22px;
+    }
+
+    .dashboard-heading h2,
+    .create-card h2 {
+        font-size: 27px;
+    }
+
+    header {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    header nav {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}

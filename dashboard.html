@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | MyBlog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>MyBlog</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="create_blog.html">Create Blog</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <div class="dashboard-heading">
+            <div>
+                <p class="dashboard-label">YOUR CREATIVE SPACE</p>
+                <h2>My Dashboard</h2>
+                <p>Manage your stories and share your ideas.</p>
+            </div>
+
+            <a class="dashboard-create-btn" href="create_blog.html">
+                + Create Blog
+            </a>
+        </div>
+
+        <section class="stats-card">
+            <div>
+                <p>Total Blog Posts</p>
+                <h3 id="totalPosts">0</h3>
+            </div>
+            <span class="stats-icon">✍️</span>
+        </section>
+
+        <section class="dashboard-posts">
+            <h2>My Stories</h2>
+            <div id="dashboardPosts" class="dashboard-grid"></div>
+            <p id="noPosts" class="no-posts">
+                No stories yet. Create your first blog!
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>MyBlog — Share your story with the world.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

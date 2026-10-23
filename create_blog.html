@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog | MyBlog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>MyBlog</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="create-blog.html">Create Blog</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main class="create-container">
+        <div class="create-card">
+            <p class="dashboard-label">YOUR NEXT BIG IDEA</p>
+            <h2>Create a Story</h2>
+            <p class="create-description">
+                Every great story starts with a few words.
+            </p>
+
+            <form id="createBlogForm">
+                <label for="blogTitle">Blog Title</label>
+                <input type="text" id="blogTitle"
+                       placeholder="Give your story a title" required>
+
+                <label for="blogCategory">Category</label>
+                <select id="blogCategory" required>
+                    <option value="">Choose a category</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Lifestyle">Lifestyle</option>
+                    <option value="Education">Education</option>
+                    <option value="Creativity">Creativity</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="blogContent">Your Story</label>
+                <textarea id="blogContent" rows="8"
+                          placeholder="Start writing your story here..."
+                          required></textarea>
+
+                <div class="create-actions">
+                    <a href="dashboard.html" class="cancel-btn">
+                        Cancel
+                    </a>
+                    <button type="submit">Publish Blog ↗</button>
+                </div>
+
+                <p id="createMessage" aria-live="polite"></p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>MyBlog — Your ideas deserve to be shared.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
